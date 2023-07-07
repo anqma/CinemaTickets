@@ -1,0 +1,31 @@
+﻿@model List<CinemaTicketsAdminApp.Models.Order>
+
+<div class="container">
+<div>This is the Order Index page</div>
+<div class="row m-4">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Customer details</th>
+                <th scope="col">Number of tickets</th>
+                <th scope="col"></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                var item = Model[i];
+                <tr>
+                    <th scope="row">@(i + 1)</th>
+                    <td>@item.OrderedBy.UserName</td>
+                    <td>@item.CinemaTickets.Count</td>
+                    <td><a asp-route-orderId="@item.Id" asp-action="Details" class="btn btn-danger">View Order</a></td>
+                    <td><a class="btn btn-info" href="/Order/SavePdf/@item.Id">Create invoice</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>

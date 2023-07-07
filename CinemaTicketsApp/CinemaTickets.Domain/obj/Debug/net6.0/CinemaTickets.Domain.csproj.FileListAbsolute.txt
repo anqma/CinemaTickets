@@ -1,0 +1,12 @@
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\bin\Debug\net6.0\CinemaTickets.Domain.deps.json
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\bin\Debug\net6.0\CinemaTickets.Domain.dll
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\bin\Debug\net6.0\CinemaTickets.Domain.pdb
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.csproj.AssemblyReference.cache
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.AssemblyInfoInputs.cache
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.AssemblyInfo.cs
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.dll
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\refint\CinemaTickets.Domain.dll
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\CinemaTickets.Domain.pdb
+C:\Users\Ana\source\repos\CinemaTicketsApp\CinemaTickets.Domain\obj\Debug\net6.0\ref\CinemaTickets.Domain.dll

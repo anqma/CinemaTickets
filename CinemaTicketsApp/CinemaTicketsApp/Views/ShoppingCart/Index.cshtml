@@ -1,0 +1,57 @@
+﻿@model CinemaTickets.Domain.Domain_models.DTO.ShoppingCartDTO
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Shopping cart</h1>
+@if (Model.CinemaTicketsInShoppingCart.Count == 0)
+{
+    <h5>No tickets in the shopping cart.</h5>
+}
+else
+{
+    <div class="row">
+        <div class="form-group">
+            <a href = "/ShoppingCart/OrderNow" class="btn btn-warning">Order now</a>
+        </div>
+    </div>
+    <div class="row m-4">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Movie Title</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var i = 1;
+                    foreach (var item in Model.CinemaTicketsInShoppingCart)
+                    {
+                        <tr>
+                            <th scope="row">@(i)</th>
+                            <td>@item.CinemaTicket.MovieTitle</td>
+                            <td>@item.Quantity</td>
+                            <td>$@item.CinemaTicket.TicketPrice</td>
+                            <td><a href="/ShoppingCart/DeleteFromShoppingCart?Id=@item.CinemaTicket.Id" class="btn btn-danger">Delete from shopping cart</a></td>
+                        </tr>
+                        i++;
+                    }
+                }
+            </tbody>
+            <tfoot class="thead-dark">
+                <tr>
+                    <th scope="col">Total:</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">$@Model.TotalPrice</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+}
